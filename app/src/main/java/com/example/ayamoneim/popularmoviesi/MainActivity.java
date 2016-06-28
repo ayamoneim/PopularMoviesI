@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Log.d("ghjg", "gfhf");
             startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
             return true;
         }
