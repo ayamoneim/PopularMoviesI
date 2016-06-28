@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.ayamoneim.popularmoviesi.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <GridView
+        android:id="@+id/popular_movies_gridview"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:background="@color/colorBackground" />
+
+</FrameLayout>
