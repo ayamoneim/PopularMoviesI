@@ -71,7 +71,6 @@ public class MainActivityFragment extends Fragment {
         String sortBy = prefs.getString(getString(R.string.pref_sorting_key),
                 MOST_POPULAR);
 
-        Log.d("UpdateMovies", sortBy);
         fetchMoviesTask.execute(sortBy);
     }
 
@@ -89,7 +88,7 @@ public class MainActivityFragment extends Fragment {
 
 
         /**
-         * Take the String representing the complete forecast in JSON Format and
+         * Take the String representing the complete Movie List in JSON Format and
          * pull out the data we need to construct the Strings needed for the wireframes.
          *
          * Fortunately parsing is easy:  constructor takes the JSON string and converts it
@@ -111,7 +110,7 @@ public class MainActivityFragment extends Fragment {
 
             Movie[] resultStrs = new Movie[moviesArray.length()];
             for(int i = 0; i < moviesArray.length(); i++) {
-                // For now, using the format "Day, description, hi/low"
+                
                 double averageVote;
                 String overview;
                 String releaseDate;
